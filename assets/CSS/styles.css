@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: brown;
+}
+.gift-card {
+  background-color: white;
+  margin: 50px auto 20px;
+  width: 480px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s, background-color 0.3s ease;
+}
+.gift-card:hover {
+  background-color: purple;
+  transform: scale(1.1);
+}
+.gift-card h1 {
+  text-align: center;
+  margin: 40px auto 25px;
+  font-family: arial;
+  font-size: 33px;
+}
+.gift-card h1::before {
+  content: "🥳 "
+}
+
+.gift-card h1::after {
+  content: " 🥳"
+}
+.gift-card p {
+  text-align: center;
+  font-size: 20px;
+  font-family: arial;
+  margin: 20px;
+}
+.gift-card .buttons {
+margin: 30px;
+text-align: center;
+}
+
+.gift-card .buttons a {
+    margin: 25px;
+    text-decoration: none;
+    padding: 15px 20px;
+    background-color: blue;
+    color: #f2f2f2;
+    border-radius: 4px;
+
+}
+ .gift-card .buttons a:hover {
+   background-color: gray;
+   color: black;
+ }
+.give-cards {
+
+  width: 550px;
+  background-color: whitesmoke;
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 20px; */
+
+  margin: 10px auto  ;
+  border-radius: 10px;
+  display: none;
+}
+.give-cards:hover {
+transform: skewX(10deg);
+}
+.give-cards h2 {
+  text-align: center;
+  font-family: arial;
+  padding: 40px 0px 0px;
+
+}
+.give-cards p {
+  text-align: center;
+  font-family: arial;
+  font-size: 20px;
+  padding: 10px 0 20px;
+
+}
+.give-cards:target {
+  display: block;
+}
